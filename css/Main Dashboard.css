@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.table
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+ background-color: none;
+
+}
+.rightSearch
+{
+    display: flex;
+ justify-content: right;
+    align-items: center;
+    padding: 20px;
+    gap:10px;
+
+ 
+}
+
+ h1
+{padding-top: 10px;
+    font-weight: 700px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button
+{
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 45px;
+}
+
+.search
+{
+
+    padding: 10px 20px;
+    color: rgb(253, 253, 109);
+    background-color: rgb(255, 255, 255);
+}
+.se{
+    color: black;
+}
+
+button.search{
+    background-color:rgb(5, 65, 65) ;
+}
+
+input{
+    text-align: center;
+padding: 10px 20px;
+border: 1px solid rgb(5, 65, 65);
+border-radius: 6px;
+
+font-size: medium;
+}
+
+
+.table-section
+{
+    max-height: 650px;
+    overflow:auto;
+}
+
+
+table
+{
+ 
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+   transition:0.5s;
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px rgba(0,0, 0, 0.2);
+}
+
+
+
+thead tr
+{
+    position: sticky;
+    background-color: rgb(5, 65, 65);
+    font-size: 20px;
+   text-align: center;
+   color: white;
+}
+
+tbody td
+{text-align: center;}
+
+th,td{
+    border-bottom: 1PX SOLID #dddddd;
+}
+
+tbody tr:hover
+{
+/* font-size: 20px; */
+font-weight: bold;
+color: rgb(21, 119, 119) ;
+background:transparent ;
+}
+
+.edit
+{
+    font-size: 25px;
+
+    color: rgb(5, 65, 65) ;
+}
+
+
+.Space{margin-left: 20px;}
+
+
+.tb{background:transparent ;}
+
+
+.uptable{
+    display: flex;
+    justify-content: space-between;
+}
+
+::placeholder
+{color: rgb(5, 65, 65);}
+
+
+table tr th:nth-of-type(1),
+table tr td:nth-of-type(1) {
+    width: 60px;
+}
+
+table tr th:nth-of-type(10),
+table tr th:nth-of-type(11),
+table tr td:nth-of-type(10),
+table tr td:nth-of-type(11) {
+ width: 90px;
+}
+
+
+.button-date{
+    background-color: rgb(21, 119, 119) ;
+    color: #dddddd;
+    width: 50px;
+}
+
+button{
+    margin: 5px;
+}
+@media (max-width: 800px) {
+    .uptable{
+        display: block;
+    }
+}
+.form{
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+} 
+
+tbody tr:nth-last-of-type(even)
+{background-color: gainsboro;}
+
+
+/* .row{
+    display: flex;
+    gap: 20px;
+} */
+
+
+/* .myChart{
+    width: 300px;
+} */
+
+
+/* #counterr{
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+@media (max-width: 768px) { 
+    .container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+    }
+
+    input, .button-date {
+        display: block;
+        margin-top: 10px;
+        width: 80%; /* Adjust width to look better */
+        text-align: center;
+    }
+}
+
+
